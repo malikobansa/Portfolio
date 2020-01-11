@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+body{
+    font-family: 'Roboto', serif;
+}
+header{
+    display: flex;
+    border-bottom: solid 2px #000;
+ 
+     .bitmoji{
+             width: 70px;
+             height: 70px;
+             border: solid  #000;
+             border-radius: 100px;
+             margin-top: 0px ;
+     }
+ 
+    h2{
+        margin-top: 30px;
+        margin-left: 20px;
+        font-family: 'Roboto', serif;
+    }
+
+     ul{
+         display: flex;
+         margin-left: 360px;
+ 
+ 
+         li{
+             flex: 2;
+             justify-content: space-between;
+             margin: 30px 20px 0px 20px;
+            
+             list-style: none;
+             font-family: 'Roboto', serif;
+             
+             
+             a{
+                 
+                 text-decoration: none;
+                 color: #000;
+                 
+                 &:hover{
+                     color:#bbb;
+                     border: solid #141414 0px;
+                     border-bottom: 2px solid #000;
+                 }
+             }
+ 
+         
+     }
+     }
+     .open-slide{
+        visibility: hidden;
+    }
+    .side-nav{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        opacity: 0.9;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+
+        a{
+            padding: 10px 10px 10px 30px;
+            text-decoration: none;
+            font-size: 22px;
+            color: #ccc;
+            display: block;
+            transition: 0.3s;
+            font-family: 'Roboto', serif;
+
+            &:hover{
+                color: #fff;
+            }
+        }
+
+        .btn-close{
+            position: absolute;
+            top: 0;
+            right: 22px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+    }
+ 
+ }
+
+ article{
+     h2{
+        font-family: 'Roboto', serif;
+        border-bottom: 2px solid #000;
+        width: 100px
+     }
+ }
+ 
+ #container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: minmax(400px,auto);
+    grid-gap: 30px;
+    justify-items: stretch;
+    align-items: stretch;
+    margin: 0px 50px;
+
+    h1{
+        font-family: 'Roboto', serif;
+    }
+   
+    .frame{ 
+       
+        .text{
+
+          a{
+              color: black;
+              font-size: x-large;
+              text-decoration: none;
+
+              &:hover{
+                  color: #bbb;
+              }
+          }
+        }
+
+        img{
+         width: 100%;
+        }
+    }
+    
+}
+.text-container{
+    h2{
+        padding-left: 30px;
+    }
+  .text-cob{
+    padding: 30px;
+  }
+}
+
+footer{
+    display: flex;
+    border-top: 2px solid black;
+    
+    
+    .day{
+        margin: 10px 0px 20px 0px ;
+        flex: 1;
+        width: auto;
+        height: auto;
+        
+    }
+    ul{
+        height: auto ;
+        flex: 1;
+        display: flex;
+        margin-top: 10px;
+
+        a{
+            font-family: 'Roboto', serif;
+            flex: 1;
+            text-decoration: none;
+            color: black;
+
+            &:hover{
+                color: #BBb;
+                border: solid #141414 0px;
+                border-bottom: 2px solid #000;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:768px){
+    #container{
+        display: grid;
+        grid-template-columns: auto;
+
+        .frame{
+            img{
+            width: 100%;
+        }
+      }
+    }
+
+    header{
+        padding-bottom: 30px;
+        h2{
+            display: none;
+        }
+        .bitmoji{
+            position: absolute;
+            top: 2px;
+            left: 190px;
+            width: 90px;
+            height: 90px;
+        }
+        ul{
+        a{
+            display: none;
+        }
+    }
+    .open-slide{
+        visibility:visible;
+    }
+    }
+    .text-container{
+        p{
+            
+        }
+    }
+
+    footer{
+
+        .day{
+            padding: 0px 2  0px 0px 0px  ;
+            left: 30px;
+        }
+      
+        ul{
+            display: grid;
+            grid-template-columns: auto;
+      }
+    }
+}

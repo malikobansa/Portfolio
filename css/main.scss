@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+body{
+    font-family: 'Roboto' serif;
+    overflow-x: hidden;
+}
+
+header{
+   display: flex;
+   border-bottom: solid 2px #000;
+
+    .bitmoji{
+            width: 100px;
+            height: 100px;
+            border: solid  #000;
+            border-radius: 100px;
+            margin-top: 0px ;
+    }
+
+    ul{
+        display: flex;
+        margin-left: 360px;
+
+
+        li{
+            flex: 2;
+            justify-content: space-between;
+            margin: 30px 20px 0px 20px;
+            list-style: none;
+            font-family: 'Roboto', cursive;
+            
+            
+            a{
+                
+                text-decoration: none;
+                color: #000;
+                
+                &:hover{
+                    color:#bbb;
+                    border: solid #141414 0px;
+                    border-bottom: 2px solid #000;
+                }
+            }
+
+        
+    }
+    }
+
+    .open-slide{
+        visibility: hidden;
+    }
+    .side-nav{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        opacity: 0.9;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+
+        a{
+            padding: 10px 10px 10px 30px;
+            text-decoration: none;
+            font-size: 22px;
+            color: #ccc;
+            display: block;
+            transition: 0.3s;
+            font-family: 'Roboto', serif;
+
+            &:hover{
+                color: #fff;
+            }
+        }
+
+        .btn-close{
+            position: absolute;
+            top: 0;
+            right: 22px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+    }
+
+}
+
+.circle{
+    background: #000;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    position: fixed;
+    top: 500px;
+    left: 1150px;
+    cursor: pointer;
+    
+    &:hover{
+        background: #bbb;
+        transition: 2s ease-out;
+    }
+
+}
+
+
+
+
+.container{
+    height: 1000px;
+    transition: margin-left 0.5s;
+    padding: 20px;
+    overflow: hidden;
+    width:100%;
+   
+}
+.text-container{    
+     position: absolute;
+     top:300px ;
+    
+
+    h1{
+        font-size: 60px;
+        color: #000;
+        font-family: 'Roboto', cursive;
+    }
+
+    p{
+      font-size: 30px;
+      color: #000;
+      font-family: 'Roboto', cursive;
+    }
+
+    .icons{
+        
+        .sc{
+            color: #000;
+            font-size: 60px;
+            margin: 0px 10px;
+
+            &:hover{
+                color: #bbb;
+            }
+        }
+    
+      }
+    
+}
+
+@media screen and (max-width:768px){
+    header{
+        ul{
+        a{
+            display: none;
+        }
+        .bitmoji{
+            position: absolute;
+            left: 180px;
+        }
+    }
+    .open-slide{
+        visibility:visible;
+    }
+    }
+}

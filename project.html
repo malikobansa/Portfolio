@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/project.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>My Projects</title>
+</head>
+<body>
+    <header>
+      <span class="open-slide">
+        <a href="#" onclick="openSlideMenu()">
+          <svg width="30" height="30" >
+            <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+          </svg>
+        </a>
+      </span>
+      <div id="side-menu" class="side-nav" onclick="closeSlideMenu()">
+        <a href="#" class="btn-close">&times;</a>
+        <a href="index.html">HOME</a>
+        <a href="project.html">PROJECTS</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+      </div>
+        <img src="images/bitmoji-20191224093645.png" alt="Muhammad" class="bitmoji">
+        <h2>Muhammad Abdulmalik Obansa</h2>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="project.html">PROJECTS</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </header>
+      <article>
+        <h2>Projects</h2>
+     <div id="container" >
+       <div class="frame frame1">
+         <h1>Mky.Net</h1>
+           <img src="images/mky.net.PNG" alt="technology">
+           <div class="text">
+           <a href="https://mkynet.netlify.com/">View My Project <i class="fas fa-forward"></i> </a>
+           <p>A Site that talks about Technology in the World</p> 
+           </div>
+       </div>
+       <div class="frame frame2">
+        <h1>Space</h1>
+         <img src="images/Space.PNG" alt="space">
+         <div class="text">
+          <a href="https://muhammadobansa.github.io/Space/">View My Project <i class="fas fa-forward"></i> </a>
+          <p>A Very Short Space Story</p> 
+          </div>
+        </div>
+     </div>
+     </article>
+     <footer>
+       <p class="day"></p>
+       
+       <ul>
+         <a href="https://twitter.com/superobansa">Twitter</a>
+         <a href="https://www.linkedin.com/in/muhammad-abdulmalik-obansa-5b4197198/">LinkedIn</a>
+         <a href="https://github.com/amobansa">Github</a>
+         <a href="https://web.facebook.com/abdulmalikmuhamma?ref=bookmarks">Facebook</a>
+         <a href="https://www.instagram.com/superobansa/">Instagram</a>
+       </ul>
+     </footer>
+     <script src="js/main.js"></script>
+     <script src="js/all.min.js"></script>
+     <script type="text/javascript">
+     var day = document.getElementsByClassName('day');
+
+     function greatDay(){
+      var today = new Date();
+       var hourNow = today.getHours();
+        var day;
+
+         if (hourNow > 18) {
+          day = 'Have A Good Night!';
+} else if (hourNow > 12) {
+        day = 'Have A Good Day!';
+       } else if (hourNow > 0) {
+       day = 'Have A Great Day!';
+       } else {
+       day = 'Welcome!';
+       }
+
+       document.write(day)
+     }
+
+     greatDay();
+     </script>
+</body>
+</html>
